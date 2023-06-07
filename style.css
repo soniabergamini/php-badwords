@@ -16,7 +16,7 @@ input {
 }
 
 label, p {
-    margin: .5rem 0;
+    margin: .7rem 0;
 }
 
 textarea {
@@ -32,4 +32,8 @@ button {
     color: white;
     padding: .3rem .6rem;
     cursor: pointer;
+}
+
+section > div {
+    padding: 2rem;
 }

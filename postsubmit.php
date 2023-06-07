@@ -13,18 +13,30 @@
     <?php
     $paragraph = $_GET["formParagraph"];
     $word = $_GET["formWord"];
+    $newParagraph = str_replace($word, '***', $paragraph);
     ?>
 
     <h1>HELLO 👋</h1>
     <section>
         <div>
             <p>Thank you for filling out the form!</p>
-            <p>Your Text:
-                <em>"<?php echo $paragraph; ?>"</em>
-            </p>
-            <p>Text length:
-                <strong><?php echo strlen($paragraph); ?></strong>
-            </p>
+            <ul>
+                <li>
+                    <p>YOUR TEXT:
+                        <em>"<?php echo $paragraph; ?>"</em>
+                    </p>
+                </li>
+                <li>
+                    <p>LENGTH:
+                        <strong><?php echo strlen($paragraph); ?></strong>
+                    </p>
+                </li>
+                <li>
+                    <p>🫣 OBSCURED:
+                        <em><?php echo $newParagraph; ?></em>
+                    </p>
+                </li>
+            </ul>
         </div>
     </section>
 </body>
