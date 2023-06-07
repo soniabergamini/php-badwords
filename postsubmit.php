@@ -36,6 +36,11 @@
                         <em><?php echo $newParagraph; ?></em>
                     </p>
                 </li>
+                <li>
+                    <p>LENGTH:
+                        <strong><?php echo strlen($newParagraph); ?></strong>
+                    </p>
+                </li>
             </ul>
         </div>
     </section>
